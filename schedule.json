@@ -544,6 +544,26 @@
           "trailer": "https://www.youtube.com/embed/0SQJ8vBQ1XQ",
           "category": "D - Забранен за лица под 16",
           "times": ["21:45"]
+        },
+		{
+          "title": "Супер Марио Галактика: Филмът",
+          "genre": "Анимация",
+          "duration": "100 минути",
+          "version": "3D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/bxf46m16sFNufB3l00SdAPSRBdq.jpg",
+          "trailer": "https://www.youtube.com/embed/izj3od7Mwks",
+          "category": "B - Без възрастови ограничения",
+          "times": ["13:00", "15:15", "17:30"]
+        },
+        {
+          "title": "Супер Марио Галактика: Филмът",
+          "genre": "Анимация",
+          "duration": "100 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+          "trailer": "https://www.youtube.com/embed/izj3od7Mwks",
+          "category": "B - Без възрастови ограничения",
+          "times": ["19:45"]
         }
       ]
     },
