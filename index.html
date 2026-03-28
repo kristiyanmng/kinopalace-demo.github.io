@@ -154,19 +154,22 @@
       card.className = 'card';
 
       const timesHtml = movie.times
-        .map(time => `<span class="time">${time}</span>`)
-        .join('');
+  .map(time => `<span class="time">${time}</span>`)
+  .join('');
 
-      card.innerHTML = `
-        <img class="poster" src="${movie.poster}" alt="${movie.title}">
-        <div class="card-body">
-          <h3>${movie.title}</h3>
+const versionFormatted = movie.version
+  .replace('3D', '<span class="tag-3d">3D</span>');
 
-          <div class="meta">
-            <div><strong>Жанр:</strong> ${movie.genre}</div>
-            <div><strong>Продължителност:</strong> ${movie.duration}</div>
-            <div><strong>Версия:</strong> ${movie.version}</div>
-          </div>
+card.innerHTML = `
+  <img class="poster" src="${movie.poster}" alt="${movie.title}">
+  <div class="card-body">
+    <h3>${movie.title}</h3>
+
+    <div class="meta">
+      <div><strong>Жанр:</strong> ${movie.genre}</div>
+      <div><strong>Продължителност:</strong> ${movie.duration}</div>
+      <div><strong>Версия:</strong> ${versionFormatted}</div>
+    </div>
 
           <div class="actions">
             <button class="trailer-btn" onclick="openTrailer('${movie.trailer}')">
