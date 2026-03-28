@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Кино Програма</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <a href="index.html" class="logo">
+        <img src="Blue White Business ID Card.png" alt="Palace Кино" />
+      </a>
+
+      <div class="nav-wrap">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="menu-toggle" aria-label="Отвори меню">☰</label>
+
+        <nav>
+          <a href="index.html">Програма</a>
+          <a href="premieres.html">Премиери в България</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 id="week-title">Програма</h1>
+    </section>
+
+    <section class="days-strip" id="days-strip"></section>
+
+    <section class="grid" id="movies-container">Зареждане...</section>
+  </main>
+
+  <footer>
+    <div class="container">
+      Официалният сайт на кино Palace:
+      <a href="https://kinopalace.bg/" target="_blank" rel="noopener noreferrer">НАЧАЛО</a>
+    </div>
+  </footer>
+
+  <div id="trailerModal" class="modal" onclick="outsideClose(event)">
+    <div class="modal-content">
+      <button class="close" onclick="closeTrailer()" aria-label="Затвори трейлъра">×</button>
+      <iframe
+        id="trailerFrame"
+        src=""
+        title="Трейлър"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+ <script>
+  let scheduleData = null;
+  let activeDayIndex = 0;
+
+  fetch('schedule.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Не може да се зареди schedule.json');
+      }
+      return response.json();
+    })
+    .then(data => {
+      scheduleData = data;
+      document.getElementById('week-title').textContent = data.weekTitle;
+      setTodayAsActive();
+      renderDays();
+      renderMovies();
+    })
+    .catch(error => {
+      console.error(error);
+      document.getElementById('movies-container').innerHTML =
+        '<p style="color:#fca5a5;font-weight:700;">Грешка при зареждане на schedule.json</p>';
+    });
+
+  function parseDayDate(dayDate) {
+    const [day, month] = dayDate.split('.');
+    const today = new Date();
+    const year = today.getFullYear();
+    return new Date(year, Number(month) - 1, Number(day));
+  }
+
+  function isFutureOrToday(dayDate) {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    const dateObj = parseDayDate(dayDate);
+    dateObj.setHours(0, 0, 0, 0);
+
+    return dateObj >= today;
+  }
+
+  function getVisibleDays() {
+    return scheduleData.days.filter(day => isFutureOrToday(day.date));
+  }
+
+  function setTodayAsActive() {
+    const today = new Date();
+    const todayStr =
+      String(today.getDate()).padStart(2, '0') + '.' +
+      String(today.getMonth() + 1).padStart(2, '0');
+
+    const visibleDays = scheduleData.days.filter(day => isFutureOrToday(day.date));
+    const todayIndex = visibleDays.findIndex(day => day.date === todayStr);
+
+    activeDayIndex = todayIndex !== -1 ? todayIndex : 0;
+  }
+
+  function renderDays() {
+    const strip = document.getElementById('days-strip');
+    const visibleDays = getVisibleDays();
+
+    strip.innerHTML = '';
+
+    visibleDays.forEach((day, index) => {
+      const btn = document.createElement('button');
+      btn.className = 'day-tab' + (index === activeDayIndex ? ' active' : '');
+      btn.innerHTML = `
+        <span class="day-label">${day.label}</span>
+        <span class="day-date">${day.date}</span>
+      `;
+
+      btn.addEventListener('click', () => {
+        activeDayIndex = index;
+        renderDays();
+        renderMovies();
+      });
+
+      strip.appendChild(btn);
+    });
+  }
+
+  function renderMovies() {
+    const container = document.getElementById('movies-container');
+    const visibleDays = getVisibleDays();
+    const day = visibleDays[activeDayIndex];
+
+    container.innerHTML = '';
+
+    if (!day) {
+      container.innerHTML = '<p style="color:#fde68a;font-weight:700;">Няма налична програма за показване.</p>';
+      return;
+    }
+
+    day.movies.forEach(movie => {
+      const card = document.createElement('article');
+      card.className = 'card';
+
+      const timesHtml = movie.times
+        .map(time => `<span class="time">${time}</span>`)
+        .join('');
+
+      card.innerHTML = `
+        <img class="poster" src="${movie.poster}" alt="${movie.title}">
+        <div class="card-body">
+          <h3>${movie.title}</h3>
+
+          <div class="meta">
+            <div><strong>Жанр:</strong> ${movie.genre}</div>
+            <div><strong>Продължителност:</strong> ${movie.duration}</div>
+            <div><strong>Версия:</strong> ${movie.version}</div>
+          </div>
+
+          <div class="actions">
+            <button class="trailer-btn" onclick="openTrailer('${movie.trailer}')">
+              ▶ Трейлър
+            </button>
+          </div>
+
+          <div class="times">
+            <div class="schedule-group">
+              <div class="schedule-label">${day.label} • ${day.date}</div>
+              <div class="schedule-hours">
+                ${timesHtml}
+              </div>
+            </div>
+          </div>
+
+          <span class="badge">Категория: ${movie.category}</span>
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+  }
+
+  function openTrailer(url) {
+    const modal = document.getElementById('trailerModal');
+    const frame = document.getElementById('trailerFrame');
+    frame.src = url + '?autoplay=1';
+    modal.classList.add('active');
+  }
+
+  function closeTrailer() {
+    const modal = document.getElementById('trailerModal');
+    const frame = document.getElementById('trailerFrame');
+    frame.src = '';
+    modal.classList.remove('active');
+  }
+
+  function outsideClose(event) {
+    const content = document.querySelector('.modal-content');
+    if (!content.contains(event.target)) {
+      closeTrailer();
+    }
+  }
+</script>
+</body>
+</html>

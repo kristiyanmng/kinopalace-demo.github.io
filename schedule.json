@@ -1,0 +1,667 @@
+{
+  "weekTitle": "Програма 27.03 - 02.04 / 26",
+  "days": [
+    {
+      "date": "27.03",
+      "label": "Четвъртък",
+      "movies": [
+        {
+          "title": "Тафити в сърцето на пустинята",
+          "genre": "Анимация",
+          "duration": "81 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
+          "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
+          "category": "A - Препоръчва се за деца",
+          "times": ["12:30", "14:15", "16:00"]
+        },
+        {
+          "title": "Проектът \"Аве Мария\"",
+          "genre": "Фантастика",
+          "duration": "157 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/o2xLxY1LdwBMsrGD9hjIaOrIQm6.jpg",
+          "trailer": "https://www.youtube.com/embed/kNR6GagJq38",
+          "category": "B - Без възрастови ограничения",
+          "times": ["16:00", "19:00"]
+        },
+        {
+          "title": "Mortuary Assistant: ФИЛМЪТ",
+          "genre": "Ужаси",
+          "duration": "91 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/gM1kQRPwOVW1Eos5tVWqcYmHR5S.jpg",
+          "trailer": "https://www.youtube.com/embed/hkND-kMEbao",
+          "category": "D - Забранен за лица под 16",
+          "times": ["22:10"]
+        },
+        {
+          "title": "Хопъри",
+          "genre": "Анимация",
+          "duration": "106 минути",
+          "version": "3D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/7Zk07DUBunUp9E1LtLK63jJGiDk.jpg",
+          "trailer": "https://www.youtube.com/embed/akzAjiuNsyI",
+          "category": "B - Без възрастови ограничения",
+          "times": ["13:15", "15:30"]
+        },
+        {
+          "title": "Те ще те убият",
+          "genre": "Ужаси",
+          "duration": "95 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/qnTdOizsXBzYu3uIbfhHSfE29TE.jpg",
+          "trailer": "https://www.youtube.com/embed/N-_VTaweoNc",
+          "category": "D - Забранен за лица под 16",
+          "times": ["18:00", "20:00", "22:00"]
+        },
+        {
+          "title": "Супер Марио Галактика: Филмът",
+          "genre": "Анимация",
+          "duration": "100 минути",
+          "version": "3D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/bxf46m16sFNufB3l00SdAPSRBdq.jpg",
+          "trailer": "https://www.youtube.com/embed/izj3od7Mwks",
+          "category": "B - Без възрастови ограничения",
+          "times": ["13:00", "15:15", "17:30"]
+        },
+        {
+          "title": "Супер Марио Галактика: Филмът",
+          "genre": "Анимация",
+          "duration": "100 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+          "trailer": "https://www.youtube.com/embed/izj3od7Mwks",
+          "category": "B - Без възрастови ограничения",
+          "times": ["19:45"]
+        }
+      ]
+    },
+    {
+      "date": "28.03",
+      "label": "Петък",
+      "movies": [
+        {
+          "title": "Тафити в сърцето на пустинята",
+          "genre": "Анимация",
+          "duration": "81 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
+          "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
+          "category": "A - Препоръчва се за деца",
+          "times": ["12:30", "14:15", "16:00"]
+        },
+        {
+          "title": "Проектът \"Аве Мария\"",
+          "genre": "Фантастика",
+          "duration": "157 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/o2xLxY1LdwBMsrGD9hjIaOrIQm6.jpg",
+          "trailer": "https://www.youtube.com/embed/kNR6GagJq38",
+          "category": "B - Без възрастови ограничения",
+          "times": ["16:00", "19:00"]
+        },
+        {
+          "title": "Mortuary Assistant: ФИЛМЪТ",
+          "genre": "Ужаси",
+          "duration": "91 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/gM1kQRPwOVW1Eos5tVWqcYmHR5S.jpg",
+          "trailer": "https://www.youtube.com/embed/hkND-kMEbao",
+          "category": "D - Забранен за лица под 16",
+          "times": ["22:10"]
+        },
+        {
+          "title": "Хопъри",
+          "genre": "Анимация",
+          "duration": "106 минути",
+          "version": "3D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/7Zk07DUBunUp9E1LtLK63jJGiDk.jpg",
+          "trailer": "https://www.youtube.com/embed/akzAjiuNsyI",
+          "category": "B - Без възрастови ограничения",
+          "times": ["13:15", "15:30"]
+        },
+        {
+          "title": "Те ще те убият",
+          "genre": "Ужаси",
+          "duration": "95 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/qnTdOizsXBzYu3uIbfhHSfE29TE.jpg",
+          "trailer": "https://www.youtube.com/embed/N-_VTaweoNc",
+          "category": "D - Забранен за лица под 16",
+          "times": ["18:00", "20:00", "22:00"]
+        },
+        {
+          "title": "Ритъмът на джунглата",
+          "genre": "Анимация",
+          "duration": "91 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/nbAphPBqag6IHHE7FqzHXI818lE.jpg",
+          "trailer": "https://www.youtube.com/embed/6un51HP7JPA",
+          "category": "А - Препоръчва се за деца",
+          "times": ["14:30"]
+        },
+        {
+          "title": "Кърпена глава",
+          "genre": "Анимация",
+          "duration": "92 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/zIFFlcvilrrbUlveEbIsFAtUfGT.jpg",
+          "trailer": "https://www.youtube.com/embed/oGEWsJhpOF8",
+          "category": "B - Без възрастови ограничения",
+          "times": ["12:15", "16:30"]
+        },
+        {
+          "title": "Звезда",
+          "genre": "Драма",
+          "duration": "81 минути",
+          "version": "2D / БГ Продукция",
+          "poster": "https://image.tmdb.org/t/p/original/vow4RF0HEDwC9xwdjfCvQn0Gwpc.jpg",
+          "trailer": "https://www.youtube.com/embed/6N1hqgp7Eh0",
+          "category": "C - Не се препоръчва за деца под 12",
+          "times": ["18:30"]
+        },
+        {
+          "title": "Докато смъртта ни раздели 2",
+          "genre": "Ужаси",
+          "duration": "108 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/waUDWpsm3oCrzU9P4XnsBAh2cso.jpg",
+          "trailer": "https://www.youtube.com/embed/0SQJ8vBQ1XQ",
+          "category": "D - Забранен за лица под 16",
+          "times": ["20:30"]
+        }
+      ]
+    },
+    {
+      "date": "29.03",
+      "label": "Събота",
+      "movies": [
+        {
+          "title": "Тафити в сърцето на пустинята",
+          "genre": "Анимация",
+          "duration": "81 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
+          "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
+          "category": "A - Препоръчва се за деца",
+          "times": ["10:45", "12:30", "14:15", "16:00"]
+        },
+        {
+          "title": "Проектът \"Аве Мария\"",
+          "genre": "Фантастика",
+          "duration": "157 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/o2xLxY1LdwBMsrGD9hjIaOrIQm6.jpg",
+          "trailer": "https://www.youtube.com/embed/kNR6GagJq38",
+          "category": "B - Без възрастови ограничения",
+          "times": ["16:00", "19:00"]
+        },
+        {
+          "title": "Mortuary Assistant: ФИЛМЪТ",
+          "genre": "Ужаси",
+          "duration": "91 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/gM1kQRPwOVW1Eos5tVWqcYmHR5S.jpg",
+          "trailer": "https://www.youtube.com/embed/hkND-kMEbao",
+          "category": "D - Забранен за лица под 16",
+          "times": ["22:10"]
+        },
+        {
+          "title": "Пакет \"Вечност\"",
+          "genre": "Комедия",
+          "duration": "84 минути",
+          "version": "2D / БГ Продукция",
+          "poster": "https://image.tmdb.org/t/p/original/rgsduEeYUwdA4GPKufyki0Nnbf4.jpg",
+          "trailer": "https://www.youtube.com/embed/c_JxC7GsL-o",
+          "category": "B - Без възрастови ограничения",
+          "times": ["11:30"]
+        },
+        {
+          "title": "Хопъри",
+          "genre": "Анимация",
+          "duration": "106 минути",
+          "version": "3D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/7Zk07DUBunUp9E1LtLK63jJGiDk.jpg",
+          "trailer": "https://www.youtube.com/embed/akzAjiuNsyI",
+          "category": "B - Без възрастови ограничения",
+          "times": ["13:15", "15:30"]
+        },
+        {
+          "title": "Те ще те убият",
+          "genre": "Ужаси",
+          "duration": "95 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/qnTdOizsXBzYu3uIbfhHSfE29TE.jpg",
+          "trailer": "https://www.youtube.com/embed/N-_VTaweoNc",
+          "category": "D - Забранен за лица под 16",
+          "times": ["18:00", "20:00", "22:00"]
+        },
+        {
+          "title": "Ритъмът на джунглата",
+          "genre": "Анимация",
+          "duration": "91 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/nbAphPBqag6IHHE7FqzHXI818lE.jpg",
+          "trailer": "https://www.youtube.com/embed/6un51HP7JPA",
+          "category": "А - Препоръчва се за деца",
+          "times": ["10:15", "14:30"]
+        },
+        {
+          "title": "Кърпена глава",
+          "genre": "Анимация",
+          "duration": "92 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/zIFFlcvilrrbUlveEbIsFAtUfGT.jpg",
+          "trailer": "https://www.youtube.com/embed/oGEWsJhpOF8",
+          "category": "B - Без възрастови ограничения",
+          "times": ["12:15", "16:30"]
+        },
+        {
+          "title": "Звезда",
+          "genre": "Драма",
+          "duration": "81 минути",
+          "version": "2D / БГ Продукция",
+          "poster": "https://image.tmdb.org/t/p/original/vow4RF0HEDwC9xwdjfCvQn0Gwpc.jpg",
+          "trailer": "https://www.youtube.com/embed/6N1hqgp7Eh0",
+          "category": "C - Не се препоръчва за деца под 12",
+          "times": ["18:30"]
+        },
+        {
+          "title": "Докато смъртта ни раздели 2",
+          "genre": "Ужаси",
+          "duration": "108 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/waUDWpsm3oCrzU9P4XnsBAh2cso.jpg",
+          "trailer": "https://www.youtube.com/embed/0SQJ8vBQ1XQ",
+          "category": "D - Забранен за лица под 16",
+          "times": ["20:30"]
+        }
+      ]
+    },
+    {
+      "date": "30.03",
+      "label": "Неделя",
+      "movies": [
+        {
+          "title": "Тафити в сърцето на пустинята",
+          "genre": "Анимация",
+          "duration": "81 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
+          "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
+          "category": "A - Препоръчва се за деца",
+          "times": ["10:45", "12:30", "14:15", "16:00"]
+        },
+        {
+          "title": "Проектът \"Аве Мария\"",
+          "genre": "Фантастика",
+          "duration": "157 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/o2xLxY1LdwBMsrGD9hjIaOrIQm6.jpg",
+          "trailer": "https://www.youtube.com/embed/kNR6GagJq38",
+          "category": "B - Без възрастови ограничения",
+          "times": ["16:00", "19:00"]
+        },
+        {
+          "title": "Mortuary Assistant: ФИЛМЪТ",
+          "genre": "Ужаси",
+          "duration": "91 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/gM1kQRPwOVW1Eos5tVWqcYmHR5S.jpg",
+          "trailer": "https://www.youtube.com/embed/hkND-kMEbao",
+          "category": "D - Забранен за лица под 16",
+          "times": ["22:10"]
+        },
+        {
+          "title": "Пакет \"Вечност\"",
+          "genre": "Комедия",
+          "duration": "84 минути",
+          "version": "2D / БГ Продукция",
+          "poster": "https://image.tmdb.org/t/p/original/rgsduEeYUwdA4GPKufyki0Nnbf4.jpg",
+          "trailer": "https://www.youtube.com/embed/c_JxC7GsL-o",
+          "category": "B - Без възрастови ограничения",
+          "times": ["11:30"]
+        },
+        {
+          "title": "Хопъри",
+          "genre": "Анимация",
+          "duration": "106 минути",
+          "version": "3D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/7Zk07DUBunUp9E1LtLK63jJGiDk.jpg",
+          "trailer": "https://www.youtube.com/embed/akzAjiuNsyI",
+          "category": "B - Без възрастови ограничения",
+          "times": ["13:15", "15:30"]
+        },
+        {
+          "title": "Те ще те убият",
+          "genre": "Ужаси",
+          "duration": "95 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/qnTdOizsXBzYu3uIbfhHSfE29TE.jpg",
+          "trailer": "https://www.youtube.com/embed/N-_VTaweoNc",
+          "category": "D - Забранен за лица под 16",
+          "times": ["18:00", "20:00", "22:00"]
+        },
+        {
+          "title": "Ритъмът на джунглата",
+          "genre": "Анимация",
+          "duration": "91 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/nbAphPBqag6IHHE7FqzHXI818lE.jpg",
+          "trailer": "https://www.youtube.com/embed/6un51HP7JPA",
+          "category": "А - Препоръчва се за деца",
+          "times": ["10:15", "14:30"]
+        },
+        {
+          "title": "Кърпена глава",
+          "genre": "Анимация",
+          "duration": "92 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/zIFFlcvilrrbUlveEbIsFAtUfGT.jpg",
+          "trailer": "https://www.youtube.com/embed/oGEWsJhpOF8",
+          "category": "B - Без възрастови ограничения",
+          "times": ["12:15", "16:30"]
+        },
+        {
+          "title": "Звезда",
+          "genre": "Драма",
+          "duration": "81 минути",
+          "version": "2D / БГ Продукция",
+          "poster": "https://image.tmdb.org/t/p/original/vow4RF0HEDwC9xwdjfCvQn0Gwpc.jpg",
+          "trailer": "https://www.youtube.com/embed/6N1hqgp7Eh0",
+          "category": "C - Не се препоръчва за деца под 12",
+          "times": ["18:30"]
+        },
+        {
+          "title": "Докато смъртта ни раздели 2",
+          "genre": "Ужаси",
+          "duration": "108 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/waUDWpsm3oCrzU9P4XnsBAh2cso.jpg",
+          "trailer": "https://www.youtube.com/embed/0SQJ8vBQ1XQ",
+          "category": "D - Забранен за лица под 16",
+          "times": ["20:30"]
+        }
+      ]
+    },
+    {
+      "date": "31.03",
+      "label": "Понеделник",
+      "movies": [
+        {
+          "title": "Тафити в сърцето на пустинята",
+          "genre": "Анимация",
+          "duration": "81 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
+          "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
+          "category": "A - Препоръчва се за деца",
+          "times": ["12:30", "14:15", "16:00"]
+        },
+        {
+          "title": "Проектът \"Аве Мария\"",
+          "genre": "Фантастика",
+          "duration": "157 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/o2xLxY1LdwBMsrGD9hjIaOrIQm6.jpg",
+          "trailer": "https://www.youtube.com/embed/kNR6GagJq38",
+          "category": "B - Без възрастови ограничения",
+          "times": ["16:00", "19:00"]
+        },
+        {
+          "title": "Mortuary Assistant: ФИЛМЪТ",
+          "genre": "Ужаси",
+          "duration": "91 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/gM1kQRPwOVW1Eos5tVWqcYmHR5S.jpg",
+          "trailer": "https://www.youtube.com/embed/hkND-kMEbao",
+          "category": "D - Забранен за лица под 16",
+          "times": ["22:10"]
+        },
+        {
+          "title": "Хопъри",
+          "genre": "Анимация",
+          "duration": "106 минути",
+          "version": "3D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/7Zk07DUBunUp9E1LtLK63jJGiDk.jpg",
+          "trailer": "https://www.youtube.com/embed/akzAjiuNsyI",
+          "category": "B - Без възрастови ограничения",
+          "times": ["13:15", "15:30"]
+        },
+        {
+          "title": "Те ще те убият",
+          "genre": "Ужаси",
+          "duration": "95 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/qnTdOizsXBzYu3uIbfhHSfE29TE.jpg",
+          "trailer": "https://www.youtube.com/embed/N-_VTaweoNc",
+          "category": "D - Забранен за лица под 16",
+          "times": ["18:00", "20:00", "22:00"]
+        },
+        {
+          "title": "Ритъмът на джунглата",
+          "genre": "Анимация",
+          "duration": "91 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/nbAphPBqag6IHHE7FqzHXI818lE.jpg",
+          "trailer": "https://www.youtube.com/embed/6un51HP7JPA",
+          "category": "А - Препоръчва се за деца",
+          "times": ["14:30"]
+        },
+        {
+          "title": "Кърпена глава",
+          "genre": "Анимация",
+          "duration": "92 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/zIFFlcvilrrbUlveEbIsFAtUfGT.jpg",
+          "trailer": "https://www.youtube.com/embed/oGEWsJhpOF8",
+          "category": "B - Без възрастови ограничения",
+          "times": ["12:15", "16:30"]
+        },
+        {
+          "title": "Звезда",
+          "genre": "Драма",
+          "duration": "81 минути",
+          "version": "2D / БГ Продукция",
+          "poster": "https://image.tmdb.org/t/p/original/vow4RF0HEDwC9xwdjfCvQn0Gwpc.jpg",
+          "trailer": "https://www.youtube.com/embed/6N1hqgp7Eh0",
+          "category": "C - Не се препоръчва за деца под 12",
+          "times": ["18:30"]
+        },
+        {
+          "title": "Докато смъртта ни раздели 2",
+          "genre": "Ужаси",
+          "duration": "108 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/waUDWpsm3oCrzU9P4XnsBAh2cso.jpg",
+          "trailer": "https://www.youtube.com/embed/0SQJ8vBQ1XQ",
+          "category": "D - Забранен за лица под 16",
+          "times": ["20:30"]
+        }
+      ]
+    },
+    {
+      "date": "01.04",
+      "label": "Вторник",
+      "movies": [
+        {
+          "title": "Тафити в сърцето на пустинята",
+          "genre": "Анимация",
+          "duration": "81 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
+          "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
+          "category": "A - Препоръчва се за деца",
+          "times": ["12:30", "14:15", "16:00"]
+        },
+        {
+          "title": "Проектът \"Аве Мария\"",
+          "genre": "Фантастика",
+          "duration": "157 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/o2xLxY1LdwBMsrGD9hjIaOrIQm6.jpg",
+          "trailer": "https://www.youtube.com/embed/kNR6GagJq38",
+          "category": "B - Без възрастови ограничения",
+          "times": ["16:00", "19:00"]
+        },
+        {
+          "title": "Mortuary Assistant: ФИЛМЪТ",
+          "genre": "Ужаси",
+          "duration": "91 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/gM1kQRPwOVW1Eos5tVWqcYmHR5S.jpg",
+          "trailer": "https://www.youtube.com/embed/hkND-kMEbao",
+          "category": "D - Забранен за лица под 16",
+          "times": ["22:10"]
+        },
+        {
+          "title": "Хопъри",
+          "genre": "Анимация",
+          "duration": "106 минути",
+          "version": "3D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/7Zk07DUBunUp9E1LtLK63jJGiDk.jpg",
+          "trailer": "https://www.youtube.com/embed/akzAjiuNsyI",
+          "category": "B - Без възрастови ограничения",
+          "times": ["13:15", "15:30"]
+        },
+        {
+          "title": "Те ще те убият",
+          "genre": "Ужаси",
+          "duration": "95 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/qnTdOizsXBzYu3uIbfhHSfE29TE.jpg",
+          "trailer": "https://www.youtube.com/embed/N-_VTaweoNc",
+          "category": "D - Забранен за лица под 16",
+          "times": ["18:00", "20:00", "22:00"]
+        },
+        {
+          "title": "Ритъмът на джунглата",
+          "genre": "Анимация",
+          "duration": "91 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/nbAphPBqag6IHHE7FqzHXI818lE.jpg",
+          "trailer": "https://www.youtube.com/embed/6un51HP7JPA",
+          "category": "А - Препоръчва се за деца",
+          "times": ["14:30"]
+        },
+        {
+          "title": "Кърпена глава",
+          "genre": "Анимация",
+          "duration": "92 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/zIFFlcvilrrbUlveEbIsFAtUfGT.jpg",
+          "trailer": "https://www.youtube.com/embed/oGEWsJhpOF8",
+          "category": "B - Без възрастови ограничения",
+          "times": ["12:15", "16:30"]
+        },
+        {
+          "title": "Звезда",
+          "genre": "Драма",
+          "duration": "81 минути",
+          "version": "2D / БГ Продукция",
+          "poster": "https://image.tmdb.org/t/p/original/vow4RF0HEDwC9xwdjfCvQn0Gwpc.jpg",
+          "trailer": "https://www.youtube.com/embed/6N1hqgp7Eh0",
+          "category": "C - Не се препоръчва за деца под 12",
+          "times": ["18:30"]
+        },
+        {
+          "title": "Докато смъртта ни раздели 2",
+          "genre": "Ужаси",
+          "duration": "108 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/waUDWpsm3oCrzU9P4XnsBAh2cso.jpg",
+          "trailer": "https://www.youtube.com/embed/0SQJ8vBQ1XQ",
+          "category": "D - Забранен за лица под 16",
+          "times": ["20:30"]
+        }
+      ]
+    },
+    {
+      "date": "02.04",
+      "label": "Сряда",
+      "movies": [
+        {
+          "title": "Тафити в сърцето на пустинята",
+          "genre": "Анимация",
+          "duration": "81 минути",
+          "version": "2D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
+          "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
+          "category": "A - Препоръчва се за деца",
+          "times": ["12:30", "14:15", "16:00"]
+        },
+        {
+          "title": "Проектът \"Аве Мария\"",
+          "genre": "Фантастика",
+          "duration": "157 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/o2xLxY1LdwBMsrGD9hjIaOrIQm6.jpg",
+          "trailer": "https://www.youtube.com/embed/kNR6GagJq38",
+          "category": "B - Без възрастови ограничения",
+          "times": ["16:00", "19:00"]
+        },
+        {
+          "title": "Mortuary Assistant: ФИЛМЪТ",
+          "genre": "Ужаси",
+          "duration": "91 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/gM1kQRPwOVW1Eos5tVWqcYmHR5S.jpg",
+          "trailer": "https://www.youtube.com/embed/hkND-kMEbao",
+          "category": "D - Забранен за лица под 16",
+          "times": ["22:10"]
+        },
+        {
+          "title": "Хопъри",
+          "genre": "Анимация",
+          "duration": "106 минути",
+          "version": "3D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/7Zk07DUBunUp9E1LtLK63jJGiDk.jpg",
+          "trailer": "https://www.youtube.com/embed/akzAjiuNsyI",
+          "category": "B - Без възрастови ограничения",
+          "times": ["13:15", "15:30"]
+        },
+        {
+          "title": "Те ще те убият",
+          "genre": "Ужаси",
+          "duration": "95 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/qnTdOizsXBzYu3uIbfhHSfE29TE.jpg",
+          "trailer": "https://www.youtube.com/embed/N-_VTaweoNc",
+          "category": "D - Забранен за лица под 16",
+          "times": ["18:00", "20:00", "22:00"]
+        },
+        {
+          "title": "Докато смъртта ни раздели 2",
+          "genre": "Ужаси",
+          "duration": "108 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/waUDWpsm3oCrzU9P4XnsBAh2cso.jpg",
+          "trailer": "https://www.youtube.com/embed/0SQJ8vBQ1XQ",
+          "category": "D - Забранен за лица под 16",
+          "times": ["21:45"]
+        },
+        {
+          "title": "Супер Марио Галактика: Филмът",
+          "genre": "Анимация",
+          "duration": "100 минути",
+          "version": "3D / дублиран",
+          "poster": "https://image.tmdb.org/t/p/original/bxf46m16sFNufB3l00SdAPSRBdq.jpg",
+          "trailer": "https://www.youtube.com/embed/izj3od7Mwks",
+          "category": "B - Без възрастови ограничения",
+          "times": ["13:00", "15:15", "17:30"]
+        },
+        {
+          "title": "Супер Марио Галактика: Филмът",
+          "genre": "Анимация",
+          "duration": "100 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+          "trailer": "https://www.youtube.com/embed/izj3od7Mwks",
+          "category": "B - Без възрастови ограничения",
+          "times": ["19:45"]
+        }
+      ]
+    }
+  ]
+}
