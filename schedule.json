@@ -79,7 +79,7 @@
     },
     {
       "date": "28.03",
-      "label": "Петък",
+      "label": "Събота",
       "movies": [
         {
           "title": "Тафити в сърцето на пустинята",
@@ -89,7 +89,7 @@
           "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
           "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
           "category": "A - Препоръчва се за деца",
-          "times": ["12:30", "14:15", "16:00"]
+          "times": ["10:45", "12:30", "14:15"]
         },
         {
           "title": "Проектът \"Аве Мария\"",
@@ -110,6 +110,16 @@
           "trailer": "https://www.youtube.com/embed/hkND-kMEbao",
           "category": "D - Забранен за лица под 16",
           "times": ["22:10"]
+        },
+		{
+          "title": "Пакет \"Вечност\"",
+          "genre": "Комедия",
+          "duration": "84 минути",
+          "version": "2D / БГ Продукция",
+          "poster": "https://image.tmdb.org/t/p/original/rgsduEeYUwdA4GPKufyki0Nnbf4.jpg",
+          "trailer": "https://www.youtube.com/embed/c_JxC7GsL-o",
+          "category": "B - Без възрастови ограничения",
+          "times": ["11:30"]
         },
         {
           "title": "Хопъри",
@@ -139,7 +149,7 @@
           "poster": "https://image.tmdb.org/t/p/original/nbAphPBqag6IHHE7FqzHXI818lE.jpg",
           "trailer": "https://www.youtube.com/embed/6un51HP7JPA",
           "category": "А - Препоръчва се за деца",
-          "times": ["14:30"]
+          "times": ["10:15", "14:30"]
         },
         {
           "title": "Кърпена глава",
@@ -175,7 +185,7 @@
     },
     {
       "date": "29.03",
-      "label": "Събота",
+      "label": "Неделя",
       "movies": [
         {
           "title": "Тафити в сърцето на пустинята",
@@ -185,7 +195,7 @@
           "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
           "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
           "category": "A - Препоръчва се за деца",
-          "times": ["10:45", "12:30", "14:15", "16:00"]
+          "times": ["10:45", "12:30", "14:15"]
         },
         {
           "title": "Проектът \"Аве Мария\"",
@@ -281,7 +291,7 @@
     },
     {
       "date": "30.03",
-      "label": "Неделя",
+      "label": "Понеделник",
       "movies": [
         {
           "title": "Тафити в сърцето на пустинята",
@@ -291,7 +301,7 @@
           "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
           "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
           "category": "A - Препоръчва се за деца",
-          "times": ["10:45", "12:30", "14:15", "16:00"]
+          "times": ["12:30", "14:15"]
         },
         {
           "title": "Проектът \"Аве Мария\"",
@@ -312,16 +322,6 @@
           "trailer": "https://www.youtube.com/embed/hkND-kMEbao",
           "category": "D - Забранен за лица под 16",
           "times": ["22:10"]
-        },
-        {
-          "title": "Пакет \"Вечност\"",
-          "genre": "Комедия",
-          "duration": "84 минути",
-          "version": "2D / БГ Продукция",
-          "poster": "https://image.tmdb.org/t/p/original/rgsduEeYUwdA4GPKufyki0Nnbf4.jpg",
-          "trailer": "https://www.youtube.com/embed/c_JxC7GsL-o",
-          "category": "B - Без възрастови ограничения",
-          "times": ["11:30"]
         },
         {
           "title": "Хопъри",
@@ -351,7 +351,7 @@
           "poster": "https://image.tmdb.org/t/p/original/nbAphPBqag6IHHE7FqzHXI818lE.jpg",
           "trailer": "https://www.youtube.com/embed/6un51HP7JPA",
           "category": "А - Препоръчва се за деца",
-          "times": ["10:15", "14:30"]
+          "times": ["14:30"]
         },
         {
           "title": "Кърпена глава",
@@ -387,7 +387,7 @@
     },
     {
       "date": "31.03",
-      "label": "Понеделник",
+      "label": "Вторник",
       "movies": [
         {
           "title": "Тафити в сърцето на пустинята",
@@ -397,7 +397,7 @@
           "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
           "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
           "category": "A - Препоръчва се за деца",
-          "times": ["12:30", "14:15", "16:00"]
+          "times": ["12:30", "14:15"]
         },
         {
           "title": "Проектът \"Аве Мария\"",
@@ -483,7 +483,7 @@
     },
     {
       "date": "01.04",
-      "label": "Вторник",
+      "label": "Сряда",
       "movies": [
         {
           "title": "Тафити в сърцето на пустинята",
@@ -493,7 +493,7 @@
           "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
           "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
           "category": "A - Препоръчва се за деца",
-          "times": ["12:30", "14:15", "16:00"]
+          "times": ["12:30", "14:15"]
         },
         {
           "title": "Проектът \"Аве Мария\"",
@@ -536,36 +536,6 @@
           "times": ["18:00", "20:00", "22:00"]
         },
         {
-          "title": "Ритъмът на джунглата",
-          "genre": "Анимация",
-          "duration": "91 минути",
-          "version": "2D / дублиран",
-          "poster": "https://image.tmdb.org/t/p/original/nbAphPBqag6IHHE7FqzHXI818lE.jpg",
-          "trailer": "https://www.youtube.com/embed/6un51HP7JPA",
-          "category": "А - Препоръчва се за деца",
-          "times": ["14:30"]
-        },
-        {
-          "title": "Кърпена глава",
-          "genre": "Анимация",
-          "duration": "92 минути",
-          "version": "2D / дублиран",
-          "poster": "https://image.tmdb.org/t/p/original/zIFFlcvilrrbUlveEbIsFAtUfGT.jpg",
-          "trailer": "https://www.youtube.com/embed/oGEWsJhpOF8",
-          "category": "B - Без възрастови ограничения",
-          "times": ["12:15", "16:30"]
-        },
-        {
-          "title": "Звезда",
-          "genre": "Драма",
-          "duration": "81 минути",
-          "version": "2D / БГ Продукция",
-          "poster": "https://image.tmdb.org/t/p/original/vow4RF0HEDwC9xwdjfCvQn0Gwpc.jpg",
-          "trailer": "https://www.youtube.com/embed/6N1hqgp7Eh0",
-          "category": "C - Не се препоръчва за деца под 12",
-          "times": ["18:30"]
-        },
-        {
           "title": "Докато смъртта ни раздели 2",
           "genre": "Ужаси",
           "duration": "108 минути",
@@ -573,13 +543,13 @@
           "poster": "https://image.tmdb.org/t/p/original/waUDWpsm3oCrzU9P4XnsBAh2cso.jpg",
           "trailer": "https://www.youtube.com/embed/0SQJ8vBQ1XQ",
           "category": "D - Забранен за лица под 16",
-          "times": ["20:30"]
+          "times": ["21:45"]
         }
       ]
     },
     {
       "date": "02.04",
-      "label": "Сряда",
+      "label": "Четвъртък",
       "movies": [
         {
           "title": "Тафити в сърцето на пустинята",
@@ -589,7 +559,7 @@
           "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
           "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
           "category": "A - Препоръчва се за деца",
-          "times": ["12:30", "14:15", "16:00"]
+          "times": ["12:30", "14:15"]
         },
         {
           "title": "Проектът \"Аве Мария\"",
