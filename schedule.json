@@ -1,188 +1,6 @@
 {
-  "weekTitle": "Програма 27.03 - 02.04 / 26",
+  "weekTitle": "Програма",
   "days": [
-    {
-      "date": "27.03",
-      "label": "Четвъртък",
-      "movies": [
-        {
-          "title": "Тафити в сърцето на пустинята",
-          "genre": "Анимация",
-          "duration": "81 минути",
-          "version": "2D / дублиран",
-          "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
-          "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
-          "category": "A - Препоръчва се за деца",
-          "times": ["12:30", "14:15", "16:00"]
-        },
-        {
-          "title": "Проектът \"Аве Мария\"",
-          "genre": "Фантастика",
-          "duration": "157 минути",
-          "version": "2D / субтитриран",
-          "poster": "https://image.tmdb.org/t/p/original/o2xLxY1LdwBMsrGD9hjIaOrIQm6.jpg",
-          "trailer": "https://www.youtube.com/embed/kNR6GagJq38",
-          "category": "B - Без възрастови ограничения",
-          "times": ["16:00", "19:00"]
-        },
-        {
-          "title": "Mortuary Assistant: ФИЛМЪТ",
-          "genre": "Ужаси",
-          "duration": "91 минути",
-          "version": "2D / субтитриран",
-          "poster": "https://image.tmdb.org/t/p/original/gM1kQRPwOVW1Eos5tVWqcYmHR5S.jpg",
-          "trailer": "https://www.youtube.com/embed/hkND-kMEbao",
-          "category": "D - Забранен за лица под 16",
-          "times": ["22:10"]
-        },
-        {
-          "title": "Хопъри",
-          "genre": "Анимация",
-          "duration": "106 минути",
-          "version": "3D / дублиран",
-          "poster": "https://image.tmdb.org/t/p/original/7Zk07DUBunUp9E1LtLK63jJGiDk.jpg",
-          "trailer": "https://www.youtube.com/embed/akzAjiuNsyI",
-          "category": "B - Без възрастови ограничения",
-          "times": ["13:15", "15:30"]
-        },
-        {
-          "title": "Те ще те убият",
-          "genre": "Ужаси",
-          "duration": "95 минути",
-          "version": "2D / субтитриран",
-          "poster": "https://image.tmdb.org/t/p/original/qnTdOizsXBzYu3uIbfhHSfE29TE.jpg",
-          "trailer": "https://www.youtube.com/embed/N-_VTaweoNc",
-          "category": "D - Забранен за лица под 16",
-          "times": ["18:00", "20:00", "22:00"]
-        },
-        {
-          "title": "Супер Марио Галактика: Филмът",
-          "genre": "Анимация",
-          "duration": "100 минути",
-          "version": "3D / дублиран",
-          "poster": "https://image.tmdb.org/t/p/original/bxf46m16sFNufB3l00SdAPSRBdq.jpg",
-          "trailer": "https://www.youtube.com/embed/izj3od7Mwks",
-          "category": "B - Без възрастови ограничения",
-          "times": ["13:00", "15:15", "17:30"]
-        },
-        {
-          "title": "Супер Марио Галактика: Филмът",
-          "genre": "Анимация",
-          "duration": "100 минути",
-          "version": "2D / субтитриран",
-          "poster": "https://image.tmdb.org/t/p/original/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
-          "trailer": "https://www.youtube.com/embed/izj3od7Mwks",
-          "category": "B - Без възрастови ограничения",
-          "times": ["19:45"]
-        }
-      ]
-    },
-    {
-      "date": "28.03",
-      "label": "Събота",
-      "movies": [
-        {
-          "title": "Тафити в сърцето на пустинята",
-          "genre": "Анимация",
-          "duration": "81 минути",
-          "version": "2D / дублиран",
-          "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
-          "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
-          "category": "A - Препоръчва се за деца",
-          "times": ["10:45", "12:30", "14:15"]
-        },
-        {
-          "title": "Проектът \"Аве Мария\"",
-          "genre": "Фантастика",
-          "duration": "157 минути",
-          "version": "2D / субтитриран",
-          "poster": "https://image.tmdb.org/t/p/original/o2xLxY1LdwBMsrGD9hjIaOrIQm6.jpg",
-          "trailer": "https://www.youtube.com/embed/kNR6GagJq38",
-          "category": "B - Без възрастови ограничения",
-          "times": ["16:00", "19:00"]
-        },
-        {
-          "title": "Mortuary Assistant: ФИЛМЪТ",
-          "genre": "Ужаси",
-          "duration": "91 минути",
-          "version": "2D / субтитриран",
-          "poster": "https://image.tmdb.org/t/p/original/gM1kQRPwOVW1Eos5tVWqcYmHR5S.jpg",
-          "trailer": "https://www.youtube.com/embed/hkND-kMEbao",
-          "category": "D - Забранен за лица под 16",
-          "times": ["22:10"]
-        },
-		{
-          "title": "Пакет \"Вечност\"",
-          "genre": "Комедия",
-          "duration": "84 минути",
-          "version": "2D / БГ Продукция",
-          "poster": "https://image.tmdb.org/t/p/original/rgsduEeYUwdA4GPKufyki0Nnbf4.jpg",
-          "trailer": "https://www.youtube.com/embed/c_JxC7GsL-o",
-          "category": "B - Без възрастови ограничения",
-          "times": ["11:30"]
-        },
-        {
-          "title": "Хопъри",
-          "genre": "Анимация",
-          "duration": "106 минути",
-          "version": "3D / дублиран",
-          "poster": "https://image.tmdb.org/t/p/original/7Zk07DUBunUp9E1LtLK63jJGiDk.jpg",
-          "trailer": "https://www.youtube.com/embed/akzAjiuNsyI",
-          "category": "B - Без възрастови ограничения",
-          "times": ["13:15", "15:30"]
-        },
-        {
-          "title": "Те ще те убият",
-          "genre": "Ужаси",
-          "duration": "95 минути",
-          "version": "2D / субтитриран",
-          "poster": "https://image.tmdb.org/t/p/original/qnTdOizsXBzYu3uIbfhHSfE29TE.jpg",
-          "trailer": "https://www.youtube.com/embed/N-_VTaweoNc",
-          "category": "D - Забранен за лица под 16",
-          "times": ["18:00", "20:00", "22:00"]
-        },
-        {
-          "title": "Ритъмът на джунглата",
-          "genre": "Анимация",
-          "duration": "91 минути",
-          "version": "2D / дублиран",
-          "poster": "https://image.tmdb.org/t/p/original/nbAphPBqag6IHHE7FqzHXI818lE.jpg",
-          "trailer": "https://www.youtube.com/embed/6un51HP7JPA",
-          "category": "А - Препоръчва се за деца",
-          "times": ["10:15", "14:30"]
-        },
-        {
-          "title": "Кърпена глава",
-          "genre": "Анимация",
-          "duration": "92 минути",
-          "version": "2D / дублиран",
-          "poster": "https://image.tmdb.org/t/p/original/zIFFlcvilrrbUlveEbIsFAtUfGT.jpg",
-          "trailer": "https://www.youtube.com/embed/oGEWsJhpOF8",
-          "category": "B - Без възрастови ограничения",
-          "times": ["12:15", "16:30"]
-        },
-        {
-          "title": "Звезда",
-          "genre": "Драма",
-          "duration": "81 минути",
-          "version": "2D / БГ Продукция",
-          "poster": "https://image.tmdb.org/t/p/original/vow4RF0HEDwC9xwdjfCvQn0Gwpc.jpg",
-          "trailer": "https://www.youtube.com/embed/6N1hqgp7Eh0",
-          "category": "C - Не се препоръчва за деца под 12",
-          "times": ["18:30"]
-        },
-        {
-          "title": "Докато смъртта ни раздели 2",
-          "genre": "Ужаси",
-          "duration": "108 минути",
-          "version": "2D / субтитриран",
-          "poster": "https://image.tmdb.org/t/p/original/waUDWpsm3oCrzU9P4XnsBAh2cso.jpg",
-          "trailer": "https://www.youtube.com/embed/0SQJ8vBQ1XQ",
-          "category": "D - Забранен за лица под 16",
-          "times": ["20:30"]
-        }
-      ]
-    },
     {
       "date": "29.03",
       "label": "Неделя",
@@ -195,7 +13,7 @@
           "poster": "https://image.tmdb.org/t/p/original/uSpnZfWdxfBiIJ3IcwzRrYiRMuP.jpg",
           "trailer": "https://www.youtube.com/embed/8JlwCMpmdts",
           "category": "A - Препоръчва се за деца",
-          "times": ["10:45", "12:30", "14:15"]
+          "times": ["4:00", "10:45", "12:30", "14:15"]
         },
         {
           "title": "Проектът \"Аве Мария\"",
@@ -650,6 +468,306 @@
           "trailer": "https://www.youtube.com/embed/izj3od7Mwks",
           "category": "B - Без възрастови ограничения",
           "times": ["19:45"]
+        }
+      ]
+    },
+	  {
+      "date": "03.04",
+      "label": "Петък",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "04.04",
+      "label": "Събота",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "05.04",
+      "label": "Неделя",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "06.04",
+      "label": "Понеделник",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "07.04",
+      "label": "Вторник",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "08.04",
+      "label": "Сряда",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "09.04",
+      "label": "Четвъртък",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "10.04",
+      "label": "Петък",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "11.04",
+      "label": "Събота",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "12.04",
+      "label": "Неделя",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "13.04",
+      "label": "Понеделник",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "14.04",
+      "label": "Вторник",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "15.04",
+      "label": "Сряда",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "16.04",
+      "label": "Четвъртък",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "17.04",
+      "label": "Петък",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "18.04",
+      "label": "Събота",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "19.04",
+      "label": "Неделя",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "20.04",
+      "label": "Понеделник",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "21.04",
+      "label": "Вторник",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "22.04",
+      "label": "Сряда",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "23.04",
+      "label": "Четвъртък",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "24.04",
+      "label": "Петък",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "25.04",
+      "label": "Събота",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "26.04",
+      "label": "Неделя",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "27.04",
+      "label": "Понеделник",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "28.04",
+      "label": "Вторник",
+      "movies": [
+      ]
+    },
+	  {
+      "date": "29.04",
+      "label": "Сряда",
+      "movies": [
+		  {
+          "title": "Дяволът носи Прада 2",
+          "genre": "Комедия",
+          "duration": "120 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+          "trailer": "https://www.youtube.com/embed/LkRnD6EXmvs",
+          "category": "С - Не се препоръчва за деца под 12",
+          "times": ["16:30", "19:00", "21:30"]
+        }
+      ]
+    },
+	  {
+      "date": "30.04",
+      "label": "Четвъртък",
+      "movies": [
+		  {
+          "title": "Дяволът носи Прада 2",
+          "genre": "Комедия",
+          "duration": "120 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+          "trailer": "https://www.youtube.com/embed/LkRnD6EXmvs",
+          "category": "С - Не се препоръчва за деца под 12",
+          "times": ["16:30", "19:00", "21:30"]
+        }
+      ]
+    },
+	  {
+      "date": "01.05",
+      "label": "Петък",
+      "movies": [
+		  {
+          "title": "Дяволът носи Прада 2",
+          "genre": "Комедия",
+          "duration": "120 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+          "trailer": "https://www.youtube.com/embed/LkRnD6EXmvs",
+          "category": "С - Не се препоръчва за деца под 12",
+          "times": ["16:30", "19:00", "20:00", "21:30"]
+        }
+      ]
+    },
+	  {
+      "date": "02.05",
+      "label": "Събота",
+      "movies": [
+		  {
+          "title": "Дяволът носи Прада 2",
+          "genre": "Комедия",
+          "duration": "120 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+          "trailer": "https://www.youtube.com/embed/LkRnD6EXmvs",
+          "category": "С - Не се препоръчва за деца под 12",
+          "times": ["16:30", "19:00", "20:00", "21:30"]
+        }
+      ]
+    },
+	  {
+      "date": "03.05",
+      "label": "Неделя",
+      "movies": [
+		  {
+          "title": "Дяволът носи Прада 2",
+          "genre": "Комедия",
+          "duration": "120 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+          "trailer": "https://www.youtube.com/embed/LkRnD6EXmvs",
+          "category": "С - Не се препоръчва за деца под 12",
+          "times": ["16:30", "19:00", "20:00", "21:30"]
+        }
+      ]
+    },
+	  {
+      "date": "04.05",
+      "label": "Понеделник",
+      "movies": [
+		  {
+          "title": "Дяволът носи Прада 2",
+          "genre": "Комедия",
+          "duration": "120 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+          "trailer": "https://www.youtube.com/embed/LkRnD6EXmvs",
+          "category": "С - Не се препоръчва за деца под 12",
+          "times": ["16:30", "19:00", "20:00", "21:30"]
+        }
+      ]
+    },
+	  {
+      "date": "05.05",
+      "label": "Вторник",
+      "movies": [
+		  {
+          "title": "Дяволът носи Прада 2",
+          "genre": "Комедия",
+          "duration": "120 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+          "trailer": "https://www.youtube.com/embed/LkRnD6EXmvs",
+          "category": "С - Не се препоръчва за деца под 12",
+          "times": ["16:30", "19:00", "20:00", "21:30"]
+        }
+      ]
+    },
+	  {
+      "date": "06.05",
+      "label": "Сряда",
+      "movies": [
+		  {
+          "title": "Дяволът носи Прада 2",
+          "genre": "Комедия",
+          "duration": "120 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+          "trailer": "https://www.youtube.com/embed/LkRnD6EXmvs",
+          "category": "С - Не се препоръчва за деца под 12",
+          "times": ["16:30", "19:00", "20:00", "21:30"]
+        }
+      ]
+    },
+	  {
+      "date": "07.05",
+      "label": "Четвъртък",
+      "movies": [
+		  {
+          "title": "Дяволът носи Прада 2",
+          "genre": "Комедия",
+          "duration": "120 минути",
+          "version": "2D / субтитриран",
+          "poster": "https://image.tmdb.org/t/p/original/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+          "trailer": "https://www.youtube.com/embed/LkRnD6EXmvs",
+          "category": "С - Не се препоръчва за деца под 12",
+          "times": ["16:30", "19:00", "20:00", "21:30"]
         }
       ]
     }
