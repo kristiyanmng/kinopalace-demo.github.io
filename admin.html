@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Админ панел</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #0b1020;
+      color: white;
+      padding: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 6px 0;
+      border-radius: 8px;
+      border: none;
+    }
+
+    button {
+      padding: 12px;
+      background: orange;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .box {
+      max-width: 600px;
+      margin: auto;
+      background: #111827;
+      padding: 20px;
+      border-radius: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Добави прожекция</h2>
+
+  <label>Дата (пример: 30.04)</label>
+  <input id="date">
+
+  <label>Име на филм</label>
+  <input id="title">
+
+  <label>Жанр</label>
+  <input id="genre">
+
+  <label>Продължителност (пример: 120 мин)</label>
+  <input id="duration">
+
+  <label>Версия (2D / 3D)</label>
+  <input id="version">
+
+  <label>Категория</label>
+  <input id="category">
+
+  <label>Постер (линк)</label>
+  <input id="poster">
+
+  <label>Трейлър (YouTube embed линк)</label>
+  <input id="trailer">
+
+  <label>Часове (пример: 10:30, 13:00, 18:45)</label>
+  <input id="times">
+
+  <button onclick="saveMovie()">Запази</button>
+
+  <p id="status"></p>
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
