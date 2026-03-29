@@ -474,21 +474,8 @@
 	  {
       "date": "03.04",
       "label": "Петък",
-      "movies": [
-        {
-          "title": "Проектът \"Аве Мария\"",
-          "genre": "Фантастика",
-          "duration": "157 минути",
-          "version": "2D / субтитриран",
-          "poster": "https://image.tmdb.org/t/p/original/o2xLxY1LdwBMsrGD9hjIaOrIQm6.jpg",
-          "trailer": "https://www.youtube.com/embed/kNR6GagJq38",
-          "category": "Категория В - Без възрастови ограничения",
-          "times": [
-            "20:00"
-          ]
-        }
-      ]
-    },
+      "movies": []
+		  },
     {
       "date": "04.04",
       "label": "Събота",
