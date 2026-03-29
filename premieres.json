@@ -1,0 +1,139 @@
+{
+  "premieres": [
+    {
+      "title": "СУПЕР МАРИО ГАЛАКТИКА: ФИЛМЪТ",
+      "date": "01.04",
+      "poster": "https://image.tmdb.org/t/p/original/91iEgVc3P0dxmQUzRslsBDEQqSl.jpg",
+      "trailer": "https://www.youtube.com/embed/Ig0D0lCcnn8",
+      "description": "Когато спокойствието в Гъбеното кралство е нарушено от мистериозен сигнал от дълбините на космоса, Марио и Луиджи са призовани на звездна мисия...",
+      "duration": "98 минути",
+      "category": "В - Без възрастови ограничения"
+    },
+    {
+      "title": "Последният викинг",
+      "date": "03.04",
+      "poster": "https://www.cinefish.bg/data/movies_images/325/p_325345.jpg",
+      "trailer": "https://www.youtube.com/embed/tFzcPgFXQZA",
+      "description": "Анкер се завръща у дома след 15 години затвор и започва пътешествие с брат си...",
+      "duration": "116 минути",
+      "category": "C+ - Не се препоръчва за лица под 14"
+    },
+    {
+      "title": "Драмата",
+      "date": "03.04",
+      "poster": "https://image.tmdb.org/t/p/original/fwobOVBJ3cXxyxkJgHwQkvpxBcZ.jpg",
+      "trailer": "https://www.youtube.com/embed/3DDOCcyFlnw",
+      "description": "Любов, очаквания и реалност, която се пропуква преди сватбата.",
+      "duration": "95 минути",
+      "category": "C - Не се препоръчва за деца под 12"
+    },
+    {
+      "title": "Балканска сватба",
+      "date": "10.04",
+      "poster": "https://image.tmdb.org/t/p/original/nW5K9fe5xLkOOcYSdGFwqvJtThX.jpg",
+      "trailer": "https://www.youtube.com/embed/ZkDXssYp3tM",
+      "description": "Две семейства се сблъскват в международна трагикомедия.",
+      "duration": "95 минути",
+      "category": "С - Не се препоръчва за деца под 12"
+    },
+    {
+      "title": "Kill Bill: The Whole Bloody Affair",
+      "date": "17.04",
+      "poster": "https://www.cinefish.bg/data/movies_images/326/p_326050.jpg",
+      "trailer": "https://www.youtube.com/embed/-SzkFgEqB6Y",
+      "description": "",
+      "duration": "275 минути",
+      "category": "TBC - Очаква категория"
+    },
+    {
+      "title": "Доставките на Кики",
+      "date": "17.04",
+      "poster": "https://image.tmdb.org/t/p/original/q8I8YaKBKy1sukPw5WmPHCG2uCs.jpg",
+      "trailer": "https://www.youtube.com/embed/H6BCUSTQ8Fg",
+      "description": "Историята на младата вещица Кики, която търси своето място в света.",
+      "duration": "103 минути",
+      "category": "С - Не се препоръчва за деца под 12"
+    },
+    {
+      "title": "Кокозайо и тайната на мармота",
+      "date": "17.04",
+      "poster": "https://image.tmdb.org/t/p/original/cUCwWxHF1bRfqeY7beZfsvT7WBR.jpg",
+      "trailer": "",
+      "description": "",
+      "duration": "",
+      "category": ""
+    },
+    {
+      "title": "DJ Ахмет",
+      "date": "17.04",
+      "poster": "https://www.cinefish.bg/data/movies_images/326/p_326307.jpg",
+      "trailer": "",
+      "description": "История за младо момче, което мечтае да стане DJ в консервативно общество.",
+      "duration": "",
+      "category": ""
+    },
+    {
+      "title": "Вампирите от Норич",
+      "date": "17.04",
+      "poster": "https://www.kinoarena.com/uploads/media/stenik_movies_image/0001/16/thumb_15665_stenik_movies_image_index.png",
+      "trailer": "",
+      "description": "История за вампири и митични същества в един богат фантастичен свят.",
+      "duration": "",
+      "category": ""
+    },
+    {
+      "title": "Мумията",
+      "date": "17.04",
+      "poster": "https://www.cinefish.bg/data/movies_images/326/p_326348.jpg",
+      "trailer": "https://www.youtube.com/embed/nv0TeZlAmIg",
+      "description": "Нов хорър от продуцентите на Заклинанието.",
+      "duration": "133 минути",
+      "category": "TBC - Очаква категория"
+    },
+    {
+      "title": "Черно море",
+      "date": "17.04",
+      "poster": "https://image.tmdb.org/t/p/original/fkjNCuIai33vF37ky9tOi2czmGX.jpg",
+      "trailer": "https://www.youtube.com/embed/5TR1-zVQ6a4",
+      "description": "История за връзки, култури и неочаквани срещи.",
+      "duration": "90 минути",
+      "category": "С - Не се препоръчва за деца под 12"
+    },
+    {
+      "title": "4 Kids Walk Into A Bank",
+      "date": "17.04",
+      "poster": "https://image.tmdb.org/t/p/original/lQXsh3LCs7NjLPMCkWvI0xV4r0I.jpg",
+      "trailer": "",
+      "description": "",
+      "duration": "",
+      "category": ""
+    },
+    {
+      "title": "Майкъл",
+      "date": "24.04",
+      "poster": "https://image.tmdb.org/t/p/original/dLhIYRptZACtKbQ3Lyf9wbqZKFT.jpg",
+      "trailer": "https://www.youtube.com/embed/k92qpyzWQDE",
+      "description": "Историята на Майкъл Джексън – човекът зад легендата.",
+      "duration": "90 минути",
+      "category": "В - Без възрастови ограничения"
+    },
+    {
+      "title": "Шопен - Соната в Париж",
+      "date": "24.04",
+      "poster": "https://www.cinefish.bg/data/movies_images/325/p_325343.jpg",
+      "trailer": "",
+      "description": "Кинематографична интерпретация на живота и музиката на Шопен.",
+      "duration": "",
+      "category": ""
+    },
+    {
+      "title": "Дяволът носи Прада 2",
+      "date": "01.05",
+      "poster": "https://image.tmdb.org/t/p/original/zk4OI9gS6ZQAgbMaEN4yzG2dn6n.jpg",
+      "trailer": "https://www.youtube.com/embed/lCCO4mRY-Jg",
+      "description": "Продължение на култовия филм за модния свят.",
+      "duration": "120 минути",
+      "category": "С - Не се препоръчва за деца под 12"
+    }
+  ]
+}
