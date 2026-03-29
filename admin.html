@@ -1,80 +1,832 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <title>Админ панел</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Админ панел - Кино Palace</title>
   <style>
-    body {
-      font-family: Arial;
-      background: #0b1020;
-      color: white;
-      padding: 20px;
+    :root{
+      --bg:#0b1020;
+      --bg2:#151d33;
+      --card:#111827;
+      --line:rgba(255,255,255,.08);
+      --text:#f8fafc;
+      --muted:#cbd5e1;
+      --accent:#f59e0b;
+      --danger:#ef4444;
+      --ok:#22c55e;
     }
 
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 6px 0;
-      border-radius: 8px;
-      border: none;
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg, var(--bg), var(--bg2));
     }
 
-    button {
-      padding: 12px;
-      background: orange;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 10px;
+    .wrap{
+      width:min(1200px, 94%);
+      margin:24px auto 40px;
     }
 
-    .box {
-      max-width: 600px;
-      margin: auto;
-      background: #111827;
-      padding: 20px;
-      border-radius: 16px;
+    h1,h2,h3{
+      margin:0 0 12px;
+    }
+
+    .topbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      margin-bottom:18px;
+      flex-wrap:wrap;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 340px 1fr;
+      gap:18px;
+    }
+
+    .card{
+      background:rgba(17,24,39,.96);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      box-shadow:0 16px 40px rgba(0,0,0,.25);
+    }
+
+    label{
+      display:block;
+      font-size:13px;
+      color:var(--muted);
+      margin:10px 0 6px;
+      font-weight:700;
+    }
+
+    input, textarea, select{
+      width:100%;
+      padding:11px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.08);
+      background:#0f172a;
+      color:var(--text);
+      outline:none;
+    }
+
+    textarea{
+      resize:vertical;
+      min-height:84px;
+    }
+
+    .row{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+
+    .row3{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:10px;
+    }
+
+    .btns{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:14px;
+    }
+
+    button, .link-btn{
+      border:none;
+      border-radius:12px;
+      padding:11px 14px;
+      font-weight:800;
+      cursor:pointer;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .primary{
+      background:var(--accent);
+      color:#111827;
+    }
+
+    .secondary{
+      background:rgba(255,255,255,.08);
+      color:var(--text);
+    }
+
+    .danger{
+      background:rgba(239,68,68,.16);
+      color:#fecaca;
+      border:1px solid rgba(239,68,68,.2);
+    }
+
+    .success{
+      background:rgba(34,197,94,.16);
+      color:#bbf7d0;
+      border:1px solid rgba(34,197,94,.2);
+    }
+
+    .small{
+      padding:8px 10px;
+      border-radius:10px;
+      font-size:12px;
+    }
+
+    .status{
+      margin-top:12px;
+      padding:10px 12px;
+      border-radius:12px;
+      font-weight:700;
+      display:none;
+    }
+
+    .status.ok{
+      display:block;
+      background:rgba(34,197,94,.12);
+      color:#bbf7d0;
+      border:1px solid rgba(34,197,94,.18);
+    }
+
+    .status.err{
+      display:block;
+      background:rgba(239,68,68,.12);
+      color:#fecaca;
+      border:1px solid rgba(239,68,68,.18);
+    }
+
+    .day-item,
+    .movie-item,
+    .show-item{
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:14px;
+      padding:12px;
+    }
+
+    .day-item{
+      margin-bottom:10px;
+    }
+
+    .movie-item{
+      margin-bottom:14px;
+    }
+
+    .show-item{
+      margin-top:10px;
+    }
+
+    .head{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap:10px;
+      margin-bottom:8px;
+      flex-wrap:wrap;
+    }
+
+    .muted{
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.5;
+    }
+
+    .times{
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+      margin-top:6px;
+    }
+
+    .time-chip{
+      display:inline-flex;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(251,113,133,.14);
+      border:1px solid rgba(251,113,133,.2);
+      color:#fecdd3;
+      font-size:12px;
+      font-weight:800;
+    }
+
+    .section-sep{
+      height:1px;
+      background:rgba(255,255,255,.08);
+      margin:16px 0;
+      border:none;
+    }
+
+    .sticky-tools{
+      position:sticky;
+      top:12px;
+    }
+
+    pre{
+      white-space:pre-wrap;
+      word-break:break-word;
+      background:#0f172a;
+      border-radius:12px;
+      padding:12px;
+      border:1px solid rgba(255,255,255,.08);
+      max-height:320px;
+      overflow:auto;
+      margin-top:14px;
+      color:#e2e8f0;
+      font-size:12px;
+    }
+
+    @media (max-width: 980px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+
+      .sticky-tools{
+        position:static;
+      }
+    }
+
+    @media (max-width: 700px){
+      .row,
+      .row3{
+        grid-template-columns:1fr;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="wrap">
+    <div class="topbar">
+      <h1>Админ панел</h1>
+      <div class="btns" style="margin-top:0">
+        <a class="link-btn secondary" href="index.html">Към програмата</a>
+        <a class="link-btn secondary" href="premieres.html">Към премиерите</a>
+      </div>
+    </div>
 
-<div class="box">
-  <h2>Добави прожекция</h2>
+    <div class="grid">
+      <section class="card sticky-tools">
+        <h2>Настройки</h2>
 
-  <label>Дата (пример: 30.04)</label>
-  <input id="date">
+        <label for="weekTitle">Заглавие на програмата</label>
+        <input id="weekTitle" placeholder="Програма 27.03 - 02.04 / 26" />
 
-  <label>Име на филм</label>
-  <input id="title">
+        <div class="section-sep"></div>
 
-  <label>Жанр</label>
-  <input id="genre">
+        <h3>Дни</h3>
+        <div class="row">
+          <div>
+            <label for="newDayDate">Дата</label>
+            <input id="newDayDate" placeholder="29.04" />
+          </div>
+          <div>
+            <label for="newDayLabel">Ден</label>
+            <input id="newDayLabel" placeholder="Сряда" />
+          </div>
+        </div>
+        <div class="btns">
+          <button class="primary" id="addDayBtn">Добави ден</button>
+        </div>
 
-  <label>Продължителност (пример: 120 мин)</label>
-  <input id="duration">
+        <div class="section-sep"></div>
 
-  <label>Версия (2D / 3D)</label>
-  <input id="version">
+        <h3>Филм</h3>
 
-  <label>Категория</label>
-  <input id="category">
+        <label for="movieDay">Към ден</label>
+        <select id="movieDay"></select>
 
-  <label>Постер (линк)</label>
-  <input id="poster">
+        <label for="movieTitle">Заглавие</label>
+        <input id="movieTitle" />
 
-  <label>Трейлър (YouTube embed линк)</label>
-  <input id="trailer">
+        <div class="row3">
+          <div>
+            <label for="movieGenre">Жанр</label>
+            <input id="movieGenre" />
+          </div>
+          <div>
+            <label for="movieDuration">Продължителност</label>
+            <input id="movieDuration" placeholder="120 минути" />
+          </div>
+          <div>
+            <label for="movieVersion">Версия</label>
+            <input id="movieVersion" placeholder="2D / субтитриран" />
+          </div>
+        </div>
 
-  <label>Часове (пример: 10:30, 13:00, 18:45)</label>
-  <input id="times">
+        <label for="movieCategory">Категория</label>
+        <input id="movieCategory" />
 
-  <button onclick="saveMovie()">Запази</button>
+        <label for="moviePoster">Постер</label>
+        <input id="moviePoster" placeholder="https://..." />
 
-  <p id="status"></p>
-</div>
+        <label for="movieTrailer">Трейлър</label>
+        <input id="movieTrailer" placeholder="https://www.youtube.com/embed/..." />
 
-<script src="admin.js"></script>
+        <div class="btns">
+          <button class="primary" id="addMovieBtn">Добави филм</button>
+        </div>
 
+        <div class="section-sep"></div>
+
+        <h3>Прожекция</h3>
+
+        <label for="showMovie">Филм</label>
+        <select id="showMovie"></select>
+
+        <div class="row">
+          <div>
+            <label for="showDate">Дата</label>
+            <select id="showDate"></select>
+          </div>
+          <div>
+            <label for="showTime">Час</label>
+            <input id="showTime" placeholder="18:30" />
+          </div>
+        </div>
+
+        <div class="btns">
+          <button class="primary" id="addShowBtn">Добави прожекция</button>
+        </div>
+
+        <div class="section-sep"></div>
+
+        <div class="btns">
+          <button class="success" id="saveDraftBtn">Запази чернова</button>
+          <button class="secondary" id="loadDraftBtn">Зареди чернова</button>
+          <button class="danger" id="clearAllBtn">Изчисти всичко</button>
+        </div>
+
+        <div class="btns">
+          <button class="primary" id="generateBtn">Генерирай schedule.json</button>
+        </div>
+
+        <div id="status" class="status"></div>
+      </section>
+
+      <section class="card">
+        <h2>Преглед</h2>
+        <div id="preview"></div>
+
+        <h3 style="margin-top:18px;">JSON преглед</h3>
+        <pre id="jsonPreview">{}</pre>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const STORAGE_KEY = 'kinoPalaceAdminDraftV1';
+
+    const state = {
+      weekTitle: '',
+      days: [],
+      moviesLibrary: []
+    };
+
+    const $ = (id) => document.getElementById(id);
+
+    const els = {
+      weekTitle: $('weekTitle'),
+      newDayDate: $('newDayDate'),
+      newDayLabel: $('newDayLabel'),
+      addDayBtn: $('addDayBtn'),
+
+      movieDay: $('movieDay'),
+      movieTitle: $('movieTitle'),
+      movieGenre: $('movieGenre'),
+      movieDuration: $('movieDuration'),
+      movieVersion: $('movieVersion'),
+      movieCategory: $('movieCategory'),
+      moviePoster: $('moviePoster'),
+      movieTrailer: $('movieTrailer'),
+      addMovieBtn: $('addMovieBtn'),
+
+      showMovie: $('showMovie'),
+      showDate: $('showDate'),
+      showTime: $('showTime'),
+      addShowBtn: $('addShowBtn'),
+
+      saveDraftBtn: $('saveDraftBtn'),
+      loadDraftBtn: $('loadDraftBtn'),
+      clearAllBtn: $('clearAllBtn'),
+      generateBtn: $('generateBtn'),
+
+      preview: $('preview'),
+      jsonPreview: $('jsonPreview'),
+      status: $('status')
+    };
+
+    function showStatus(text, type = 'ok') {
+      els.status.className = 'status ' + type;
+      els.status.textContent = text;
+    }
+
+    function clearStatus() {
+      els.status.className = 'status';
+      els.status.textContent = '';
+    }
+
+    function slugify(text) {
+      return String(text || '')
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w\-а-яА-Я]+/g, '')
+        .replace(/\-+/g, '-');
+    }
+
+    function buildMovieId(title, version) {
+      return `${slugify(title)}-${slugify(version || 'default')}-${Math.random().toString(36).slice(2, 7)}`;
+    }
+
+    function sortDates(a, b) {
+      const [d1, m1] = a.split('.').map(Number);
+      const [d2, m2] = b.split('.').map(Number);
+      const year = new Date().getFullYear();
+      return new Date(year, m1 - 1, d1) - new Date(year, m2 - 1, d2);
+    }
+
+    function sortTimes(a, b) {
+      return a.localeCompare(b, 'bg');
+    }
+
+    function getDayByDate(date) {
+      return state.days.find(d => d.date === date);
+    }
+
+    function getMovieById(id) {
+      return state.moviesLibrary.find(m => m.id === id);
+    }
+
+    function updateSelectors() {
+      const sortedDays = [...state.days].sort((a, b) => sortDates(a.date, b.date));
+
+      els.movieDay.innerHTML = sortedDays.length
+        ? sortedDays.map(day => `<option value="${day.date}">${day.label} • ${day.date}</option>`).join('')
+        : '<option value="">Няма дни</option>';
+
+      els.showDate.innerHTML = sortedDays.length
+        ? sortedDays.map(day => `<option value="${day.date}">${day.label} • ${day.date}</option>`).join('')
+        : '<option value="">Няма дни</option>';
+
+      els.showMovie.innerHTML = state.moviesLibrary.length
+        ? state.moviesLibrary.map(movie => `<option value="${movie.id}">${movie.title} (${movie.version || 'без версия'})</option>`).join('')
+        : '<option value="">Няма филми</option>';
+    }
+
+    function buildScheduleJson() {
+      const sortedDays = [...state.days]
+        .sort((a, b) => sortDates(a.date, b.date))
+        .map(day => {
+          const moviesForDay = state.moviesLibrary
+            .map(movie => {
+              const times = (movie.shows || [])
+                .filter(show => show.date === day.date)
+                .map(show => show.time)
+                .sort(sortTimes);
+
+              if (!times.length) return null;
+
+              return {
+                title: movie.title,
+                genre: movie.genre,
+                duration: movie.duration,
+                version: movie.version,
+                poster: movie.poster,
+                trailer: movie.trailer,
+                category: movie.category,
+                times
+              };
+            })
+            .filter(Boolean);
+
+          return {
+            date: day.date,
+            label: day.label,
+            movies: moviesForDay
+          };
+        });
+
+      return {
+        weekTitle: state.weekTitle || 'Програма',
+        days: sortedDays
+      };
+    }
+
+    function renderPreview() {
+      updateSelectors();
+
+      const sortedDays = [...state.days].sort((a, b) => sortDates(a.date, b.date));
+      els.preview.innerHTML = '';
+
+      if (!sortedDays.length) {
+        els.preview.innerHTML = '<div class="muted">Все още няма добавени дни.</div>';
+        els.jsonPreview.textContent = JSON.stringify(buildScheduleJson(), null, 2);
+        return;
+      }
+
+      sortedDays.forEach(day => {
+        const dayEl = document.createElement('div');
+        dayEl.className = 'day-item';
+
+        const dayMovies = state.moviesLibrary
+          .map(movie => {
+            const shows = (movie.shows || [])
+              .filter(show => show.date === day.date)
+              .sort((a, b) => sortTimes(a.time, b.time));
+
+            return { movie, shows };
+          })
+          .filter(item => item.shows.length > 0);
+
+        dayEl.innerHTML = `
+          <div class="head">
+            <div>
+              <strong>${day.label} • ${day.date}</strong>
+              <div class="muted">${dayMovies.length ? `${dayMovies.length} филма` : 'Няма прожекции'}</div>
+            </div>
+            <button class="danger small" data-remove-day="${day.date}">Изтрий деня</button>
+          </div>
+        `;
+
+        if (!dayMovies.length) {
+          const empty = document.createElement('div');
+          empty.className = 'muted';
+          empty.textContent = 'Няма прожекции за този ден.';
+          dayEl.appendChild(empty);
+        }
+
+        dayMovies.forEach(item => {
+          const movieEl = document.createElement('div');
+          movieEl.className = 'movie-item';
+
+          movieEl.innerHTML = `
+            <div class="head">
+              <div>
+                <strong>${item.movie.title}</strong>
+                <div class="muted">
+                  ${item.movie.genre || ''}<br>
+                  ${item.movie.duration || ''}<br>
+                  ${item.movie.version || ''}<br>
+                  ${item.movie.category || ''}
+                </div>
+                <div class="times">
+                  ${item.shows.map(show => `<span class="time-chip">${show.time}</span>`).join('')}
+                </div>
+              </div>
+              <div class="btns" style="margin-top:0">
+                <button class="danger small" data-remove-movie="${item.movie.id}">Изтрий филм</button>
+              </div>
+            </div>
+          `;
+
+          item.shows.forEach(show => {
+            const showEl = document.createElement('div');
+            showEl.className = 'show-item';
+            showEl.innerHTML = `
+              <div class="head">
+                <div>
+                  <strong>${show.date} • ${show.time}</strong>
+                </div>
+                <button class="danger small" data-remove-show="${item.movie.id}|${show.date}|${show.time}">Изтрий прожекция</button>
+              </div>
+            `;
+            movieEl.appendChild(showEl);
+          });
+
+          dayEl.appendChild(movieEl);
+        });
+
+        els.preview.appendChild(dayEl);
+      });
+
+      document.querySelectorAll('[data-remove-day]').forEach(btn => {
+        btn.addEventListener('click', () => removeDay(btn.dataset.removeDay));
+      });
+
+      document.querySelectorAll('[data-remove-movie]').forEach(btn => {
+        btn.addEventListener('click', () => removeMovie(btn.dataset.removeMovie));
+      });
+
+      document.querySelectorAll('[data-remove-show]').forEach(btn => {
+        const [movieId, date, time] = btn.dataset.removeShow.split('|');
+        btn.addEventListener('click', () => removeShow(movieId, date, time));
+      });
+
+      els.jsonPreview.textContent = JSON.stringify(buildScheduleJson(), null, 2);
+    }
+
+    function addDay() {
+      const date = els.newDayDate.value.trim();
+      const label = els.newDayLabel.value.trim();
+
+      if (!date || !label) {
+        showStatus('Попълни дата и ден.', 'err');
+        return;
+      }
+
+      if (getDayByDate(date)) {
+        showStatus('Този ден вече съществува.', 'err');
+        return;
+      }
+
+      state.days.push({ date, label });
+      els.newDayDate.value = '';
+      els.newDayLabel.value = '';
+      clearStatus();
+      renderPreview();
+    }
+
+    function addMovie() {
+      const targetDate = els.movieDay.value;
+      const title = els.movieTitle.value.trim();
+      const genre = els.movieGenre.value.trim();
+      const duration = els.movieDuration.value.trim();
+      const version = els.movieVersion.value.trim();
+      const category = els.movieCategory.value.trim();
+      const poster = els.moviePoster.value.trim();
+      const trailer = els.movieTrailer.value.trim();
+
+      if (!targetDate || !title) {
+        showStatus('Избери ден и въведи заглавие.', 'err');
+        return;
+      }
+
+      const movie = {
+        id: buildMovieId(title, version),
+        title,
+        genre,
+        duration,
+        version,
+        category,
+        poster,
+        trailer,
+        shows: []
+      };
+
+      state.moviesLibrary.push(movie);
+
+      els.showMovie.value = movie.id;
+      els.showDate.value = targetDate;
+
+      els.movieTitle.value = '';
+      els.movieGenre.value = '';
+      els.movieDuration.value = '';
+      els.movieVersion.value = '';
+      els.movieCategory.value = '';
+      els.moviePoster.value = '';
+      els.movieTrailer.value = '';
+
+      clearStatus();
+      renderPreview();
+    }
+
+    function addShow() {
+      const movieId = els.showMovie.value;
+      const date = els.showDate.value;
+      const time = els.showTime.value.trim();
+
+      if (!movieId || !date || !time) {
+        showStatus('Избери филм, дата и час.', 'err');
+        return;
+      }
+
+      const movie = getMovieById(movieId);
+      if (!movie) {
+        showStatus('Филмът не е намерен.', 'err');
+        return;
+      }
+
+      movie.shows = movie.shows || [];
+
+      const exists = movie.shows.some(show => show.date === date && show.time === time);
+      if (exists) {
+        showStatus('Тази прожекция вече съществува.', 'err');
+        return;
+      }
+
+      movie.shows.push({ date, time });
+      movie.shows.sort((a, b) => {
+        const dateCmp = sortDates(a.date, b.date);
+        if (dateCmp !== 0) return dateCmp;
+        return sortTimes(a.time, b.time);
+      });
+
+      els.showTime.value = '';
+      clearStatus();
+      renderPreview();
+    }
+
+    function removeDay(date) {
+      if (!confirm(`Сигурен ли си, че искаш да изтриеш ден ${date}?`)) return;
+
+      state.days = state.days.filter(day => day.date !== date);
+      state.moviesLibrary.forEach(movie => {
+        movie.shows = (movie.shows || []).filter(show => show.date !== date);
+      });
+
+      clearStatus();
+      renderPreview();
+    }
+
+    function removeMovie(movieId) {
+      if (!confirm('Сигурен ли си, че искаш да изтриеш филма изцяло?')) return;
+
+      state.moviesLibrary = state.moviesLibrary.filter(movie => movie.id !== movieId);
+      clearStatus();
+      renderPreview();
+    }
+
+    function removeShow(movieId, date, time) {
+      const movie = getMovieById(movieId);
+      if (!movie) return;
+
+      movie.shows = (movie.shows || []).filter(show => !(show.date === date && show.time === time));
+      clearStatus();
+      renderPreview();
+    }
+
+    function saveDraft() {
+      state.weekTitle = els.weekTitle.value.trim();
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      showStatus('Черновата е запазена.');
+    }
+
+    function loadDraft() {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) {
+        showStatus('Няма запазена чернова.', 'err');
+        return;
+      }
+
+      const parsed = JSON.parse(raw);
+
+      state.weekTitle = parsed.weekTitle || '';
+      state.days = Array.isArray(parsed.days) ? parsed.days : [];
+      state.moviesLibrary = Array.isArray(parsed.moviesLibrary) ? parsed.moviesLibrary : [];
+
+      els.weekTitle.value = state.weekTitle;
+      clearStatus();
+      renderPreview();
+    }
+
+    function clearAll() {
+      if (!confirm('Сигурен ли си, че искаш да изчистиш всичко?')) return;
+
+      state.weekTitle = '';
+      state.days = [];
+      state.moviesLibrary = [];
+
+      els.weekTitle.value = '';
+      els.newDayDate.value = '';
+      els.newDayLabel.value = '';
+      els.movieTitle.value = '';
+      els.movieGenre.value = '';
+      els.movieDuration.value = '';
+      els.movieVersion.value = '';
+      els.movieCategory.value = '';
+      els.moviePoster.value = '';
+      els.movieTrailer.value = '';
+      els.showTime.value = '';
+
+      clearStatus();
+      renderPreview();
+    }
+
+    function generateJsonFile() {
+      state.weekTitle = els.weekTitle.value.trim();
+
+      const output = buildScheduleJson();
+      const content = JSON.stringify(output, null, 2);
+
+      const blob = new Blob([content], { type: 'application/json;charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'schedule.json';
+      a.click();
+      URL.revokeObjectURL(a.href);
+
+      showStatus('Готово! Качи новия schedule.json в GitHub.');
+    }
+
+    els.addDayBtn.addEventListener('click', addDay);
+    els.addMovieBtn.addEventListener('click', addMovie);
+    els.addShowBtn.addEventListener('click', addShow);
+    els.saveDraftBtn.addEventListener('click', saveDraft);
+    els.loadDraftBtn.addEventListener('click', loadDraft);
+    els.clearAllBtn.addEventListener('click', clearAll);
+    els.generateBtn.addEventListener('click', generateJsonFile);
+    els.weekTitle.addEventListener('input', () => {
+      state.weekTitle = els.weekTitle.value.trim();
+      els.jsonPreview.textContent = JSON.stringify(buildScheduleJson(), null, 2);
+    });
+
+    renderPreview();
+  </script>
 </body>
 </html>
