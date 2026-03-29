@@ -63,6 +63,56 @@ header{
   object-fit:contain;
 }
 
+.screening-progress{
+  margin-top:12px;
+  padding:10px 12px;
+  border-radius:14px;
+  background:rgba(34,197,94,.08);
+  border:1px solid rgba(34,197,94,.18);
+}
+
+.screening-progress-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  margin-bottom:8px;
+  flex-wrap:wrap;
+}
+
+.live-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:5px 10px;
+  border-radius:999px;
+  background:rgba(34,197,94,.18);
+  color:#86efac;
+  font-size:12px;
+  font-weight:800;
+}
+
+.remaining-time{
+  color:#bbf7d0;
+  font-size:12px;
+  font-weight:700;
+}
+
+.progress-bar{
+  width:100%;
+  height:8px;
+  border-radius:999px;
+  background:rgba(255,255,255,.08);
+  overflow:hidden;
+}
+
+.progress-bar-fill{
+  height:100%;
+  border-radius:999px;
+  background:linear-gradient(90deg, #22c55e, #84cc16);
+}
+
+
 .nav-wrap{
   display:flex;
   align-items:center;
@@ -118,19 +168,52 @@ nav a:hover{
   line-height:1.15;
 }
 
-/* ДАТИ ОТГОРЕ */
+/* Лента с дни + стрелки */
+.days-nav{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:10px;
+}
+
 .days-strip{
   display:flex;
   gap:12px;
   overflow-x:auto;
+  scroll-behavior:smooth;
   padding:6px 0 20px;
-  margin-bottom:10px;
+  flex:1;
 }
 
 .days-strip::-webkit-scrollbar{
   height:6px;
 }
 
+.days-arrow{
+  flex:0 0 auto;
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.04);
+  color:var(--text);
+  font-size:28px;
+  line-height:1;
+  cursor:pointer;
+  transition:.2s ease;
+}
+
+.days-arrow:hover{
+  border-color:rgba(245,158,11,.45);
+  color:#fde68a;
+}
+
+.days-arrow:disabled{
+  opacity:0.35;
+  cursor:default;
+}
+
+/* Квадрати за дните */
 .day-tab{
   border:1px solid rgba(255,255,255,.12);
   background:rgba(255,255,255,.04);
@@ -163,6 +246,31 @@ nav a:hover{
 
 .day-date{
   font-size:20px;
+}
+
+.day-tab.empty-day{
+  background:rgba(255,255,255,.02);
+  border-color:rgba(255,255,255,.05);
+  color:rgba(248,250,252,.45);
+  opacity:0.65;
+  cursor:not-allowed;
+}
+
+.day-tab.empty-day:hover{
+  border-color:rgba(255,255,255,.05);
+  transform:none;
+}
+
+.day-tab.empty-day .day-date,
+.day-tab.empty-day .day-label{
+  color:rgba(248,250,252,.45);
+}
+
+.day-empty-text{
+  font-size:11px;
+  font-weight:700;
+  color:rgba(248,250,252,.4);
+  margin-top:2px;
 }
 
 .grid{
@@ -226,6 +334,10 @@ nav a:hover{
   font-weight:700;
   cursor:pointer;
   transition:0.2s;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .trailer-btn:hover{
@@ -475,6 +587,17 @@ footer a:hover{
     line-height:1.25;
   }
 
+  .days-nav{
+    gap:8px;
+  }
+
+  .days-arrow{
+    width:40px;
+    height:40px;
+    font-size:24px;
+    border-radius:12px;
+  }
+
   .grid{
     grid-template-columns:1fr;
     gap:16px;
@@ -592,4 +715,310 @@ footer a:hover{
     padding:5px 8px;
     min-width:60px;
   }
+}
+
+@media (max-width: 760px){
+  .day-tab{
+    min-width: 74px;
+    padding: 8px 10px;
+    border-radius: 14px;
+    gap: 2px;
+  }
+
+  .day-label{
+    font-size: 11px;
+    line-height: 1.1;
+  }
+
+  .day-date{
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  .day-empty-text{
+    font-size: 9px;
+  }
+
+  .days-strip{
+    gap: 8px;
+    padding: 4px 0 14px;
+  }
+}
+
+@media (max-width: 420px){
+  .day-tab{
+    min-width: 68px;
+    padding: 7px 8px;
+  }
+
+  .day-label{
+    font-size: 10px;
+  }
+
+  .day-date{
+    font-size: 15px;
+  }
+}
+
+/* ===== ПРОГРЕС БАР (филм + реклами) ===== */
+
+.screening-progress {
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(34,197,94,.08);
+  border: 1px solid rgba(34,197,94,.18);
+}
+
+.screening-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.live-badge {
+  background: rgba(34,197,94,.18);
+  color: #86efac;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.remaining-time {
+  color: #bbf7d0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255,255,255,.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  transition: width 0.4s ease;
+}
+
+/* ===== РЕКЛАМИ (различен цвят) ===== */
+
+.ads-phase {
+  background: rgba(59,130,246,.08);
+  border: 1px solid rgba(59,130,246,.18);
+}
+
+.ads-phase .live-badge {
+  background: rgba(59,130,246,.18);
+  color: #93c5fd;
+}
+
+.ads-phase .remaining-time {
+  color: #bfdbfe;
+}
+
+.ads-phase .progress-bar-fill {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
+/* ===== ПРЕМИЕРИ (подобрена визия) ===== */
+
+.premiere .meta {
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--muted);
+}
+
+.premiere .meta strong {
+  color: var(--text);
+}
+
+.premiere .trailer-btn {
+  width: auto;
+  min-width: 160px;
+  margin-top: 10px;
+}
+
+/* ===== EMPTY DAYS (по-ясни) ===== */
+
+.day-tab.empty-day {
+  background: rgba(255,255,255,.02);
+  border-color: rgba(255,255,255,.05);
+  color: rgba(248,250,252,.45);
+  opacity: 0.6;
+}
+
+.day-empty-text {
+  font-size: 10px;
+  margin-top: 2px;
+  color: rgba(248,250,252,.35);
+}
+
+/* ===== FIX: по-компактни дни (desktop) ===== */
+
+@media (min-width: 761px) {
+  .day-tab {
+    min-width: 82px;
+    padding: 10px 12px;
+  }
+
+  .day-date {
+    font-size: 18px;
+  }
+
+  .day-label {
+    font-size: 13px;
+  }
+}
+
+/* LIVE / прогрес */
+.screening-progress {
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(34,197,94,.08);
+  border: 1px solid rgba(34,197,94,.18);
+}
+
+.screening-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.live-badge {
+  background: rgba(34,197,94,.18);
+  color: #86efac;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 800;
+}
+
+.remaining-time {
+  color: #bbf7d0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255,255,255,.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  transition: width 0.4s ease;
+}
+
+/* Реклами */
+.ads-phase {
+  background: rgba(59,130,246,.08);
+  border: 1px solid rgba(59,130,246,.18);
+}
+
+.ads-phase .live-badge {
+  background: rgba(59,130,246,.18);
+  color: #93c5fd;
+}
+
+.ads-phase .remaining-time {
+  color: #bfdbfe;
+}
+
+.ads-phase .progress-bar-fill {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
+/* Пулс */
+.pulse {
+  position: relative;
+  animation: livePulse 1.4s infinite ease-in-out;
+}
+
+@keyframes livePulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(34,197,94,.45);
+  }
+  70% {
+    transform: scale(1.04);
+    box-shadow: 0 0 0 10px rgba(34,197,94,0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(34,197,94,0);
+  }
+}
+
+.ads-phase .pulse {
+  animation: adsPulse 1.4s infinite ease-in-out;
+}
+
+@keyframes adsPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(59,130,246,.45);
+  }
+  70% {
+    transform: scale(1.04);
+    box-shadow: 0 0 0 10px rgba(59,130,246,0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(59,130,246,0);
+  }
+}
+
+/* Countdown до следваща прожекция */
+.next-countdown {
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(245,158,11,.08);
+  border: 1px solid rgba(245,158,11,.18);
+}
+
+.next-countdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.next-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: rgba(245,158,11,.16);
+  color: #fcd34d;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.next-time {
+  color: #fde68a;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.next-countdown-text {
+  color: #fef3c7;
+  font-size: 13px;
+  font-weight: 700;
 }
