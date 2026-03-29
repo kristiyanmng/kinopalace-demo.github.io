@@ -399,6 +399,7 @@
                 <option>2D / БГ продукция</option>
                 <option>3D / дублиран</option>
                 <option>3D / субтитриран</option>
+                <option>3D / БГ продукция</option>
               </select>
             </div>
           </div>
@@ -409,7 +410,11 @@
             <option>A - Препоръчва се за деца</option>
             <option>B - Без възрастови ограничения</option>
             <option>C - Не се препоръчва за деца под 12</option>
+            <option>C+ - Не се препоръчва за лица под 14</option>
             <option>D - Забранен за лица под 16</option>
+            <option>D+ - Не се препоръчва за лица под 16</option>
+            <option>X - Забранен за лица под 18</option>
+            <option>TBC - Очаква се категория</option>
           </select>
 
           <label for="moviePoster">Постер</label>
@@ -439,8 +444,8 @@
               <select id="showDate"></select>
             </div>
             <div>
-              <label for="showTime">Час</label>
-              <input id="showTime" placeholder="18:30" />
+              <label for="showTime">Часове</label>
+              <input id="showTime" placeholder="10:30, 13:00, 18:45" />
             </div>
           </div>
 
@@ -857,40 +862,59 @@
     }
 
     function addShow() {
-      const movieId = els.showMovie.value;
-      const date = els.showDate.value;
-      const time = els.showTime.value.trim();
+  const movieId = els.showMovie.value;
+  const date = els.showDate.value;
+  const rawTimes = els.showTime.value.trim();
 
-      if (!movieId || !date || !time) {
-        showStatus('Избери филм, дата и час.', 'err');
-        return;
-      }
+  if (!movieId || !date || !rawTimes) {
+    showStatus('Избери филм, дата и въведи поне един час.', 'err');
+    return;
+  }
 
-      const movie = getMovieById(movieId);
-      if (!movie) {
-        showStatus('Филмът не е намерен.', 'err');
-        return;
-      }
+  const movie = getMovieById(movieId);
+  if (!movie) {
+    showStatus('Филмът не е намерен.', 'err');
+    return;
+  }
 
-      movie.shows = movie.shows || [];
+  movie.shows = movie.shows || [];
 
-      const exists = movie.shows.some(show => show.date === date && show.time === time);
-      if (exists) {
-        showStatus('Тази прожекция вече съществува.', 'err');
-        return;
-      }
+  const times = rawTimes
+    .split(',')
+    .map(t => t.trim())
+    .filter(Boolean);
 
+  if (!times.length) {
+    showStatus('Няма валидни часове за добавяне.', 'err');
+    return;
+  }
+
+  let addedCount = 0;
+
+  times.forEach(time => {
+    const exists = movie.shows.some(show => show.date === date && show.time === time);
+    if (!exists) {
       movie.shows.push({ date, time });
-      movie.shows.sort((a, b) => {
-        const dateCmp = sortDates(a.date, b.date);
-        if (dateCmp !== 0) return dateCmp;
-        return sortTimes(a.time, b.time);
-      });
-
-      els.showTime.value = '';
-      clearStatus();
-      renderPreview();
+      addedCount++;
     }
+  });
+
+  movie.shows.sort((a, b) => {
+    const dateCmp = sortDates(a.date, b.date);
+    if (dateCmp !== 0) return dateCmp;
+    return sortTimes(a.time, b.time);
+  });
+
+  els.showTime.value = '';
+
+  if (addedCount === 0) {
+    showStatus('Всички тези прожекции вече съществуват.', 'err');
+    return;
+  }
+
+  showStatus(Добавени прожекции: ${addedCount});
+  renderPreview();
+}
 
     function removeDay(date) {
       if (!confirm(`Сигурен ли си, че искаш да изтриеш ден ${date}?`)) return;
